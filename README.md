@@ -20,7 +20,7 @@ This folder contains R scripts and functions used for data processing and figure
 1. Clone the repository:
 
 ```
-git clone https://github.com/your-username/Gene_Fusion_ICB.git
+git clone https://github.com/gnibeyro/Gene_Fusion_ICB.git
 
 ```
 2. Install necessary R dependencies (if applicable).
