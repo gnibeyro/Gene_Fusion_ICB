@@ -27,13 +27,17 @@ git clone https://github.com/gnibeyro/Gene_Fusion_ICB.git
 
 3. Run the R scripts in the R/ directory to generate figures and analyses based on the provided datasets.
 
+## Authors
+
+- **Guadalupe Nibeyro** - *Curator and Developer* - [CONICET](http://www.conicet.gov.ar) - [Fundación para el Progreso de la Medicina - FPM](https://fpmlab.org.ar/) 
+- **Elmer A. Fernández** - *Idea and Developer* - [Profile](https://www.researchgate.net/profile/Elmer_Fernandez) - [CONICET](http://www.conicet.gov.ar) - [Fundación para el Progreso de la Medicina - FPM](https://fpmlab.org.ar/) 
+
 ## Citation
 
 If you use this repository in your research, please cite our paper:
 
 **"Evaluating Gene Fusions as Outcome Predictors and Therapeutic Targets in Immune Checkpoint Blockade-Treated Advanced Melanoma"**
 
-Authors: Guadalupe Nibeyro, Verónica M. Baronetto, Agustín Nava, María Romina Girotti, Laura B. Prato, Gabriel Morón, Elmer A. Fernández.
 Year: 2025
 
 ## Contact
