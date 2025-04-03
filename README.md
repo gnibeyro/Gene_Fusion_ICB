@@ -27,6 +27,14 @@ git clone https://github.com/gnibeyro/Gene_Fusion_ICB.git
 
 ```
 install.packages("ggplot2")
+install.packages("ggpubr")
+install.packages("survival")
+install.packages("survminer")
+install.packages("tidyr")
+install.packages("stringr")
+install.packages("epiR")
+install.packages("gridExtra")
+install.packages("smoothROCtime")
 
 ```
 
