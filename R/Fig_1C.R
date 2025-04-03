@@ -1,6 +1,3 @@
-library(survival)
-library(survminer)
-
 Table_S1$V <- ifelse(Table_S1$LS == "Alive", 0, 1)
 
 MGH <- Table_S1[which(Table_S1$Cohort == "MGH"),]
@@ -11,16 +8,20 @@ Riaz <- Table_S1[which(Table_S1$Cohort == "Riaz"),]
 Gide <- Gide[-which(Gide$LS == "Dead (not melanoma)"),]
 surv_object <- Surv(time = Gide$OS, event = Gide$V)
 fit_G <- survfit(surv_object ~ group, data = Gide)
-ggsurvplot(fit_G, data = Gide, pval = TRUE, risk.table = TRUE, linetype = "strata", palette = "jco")
+print("Figure 1C: Gide KM")
+print(ggsurvplot(fit_G, data = Gide, pval = TRUE, risk.table = TRUE, linetype = "strata", palette = "jco"))
 
 surv_object <- Surv(time = MGH$OS, event = MGH$V)
 fit_M <- survfit(surv_object ~ group, data = MGH)
-ggsurvplot(fit_M, data = MGH, pval = TRUE, risk.table = TRUE, linetype = "strata", palette = "jco")
+print("Figure 1C: MGH KM")
+print(ggsurvplot(fit_M, data = MGH, pval = TRUE, risk.table = TRUE, linetype = "strata", palette = "jco"))
 
 surv_object <- Surv(time = Hugo$OS, event = Hugo$V)
 fit_H <- survfit(surv_object ~ group, data = Hugo)
-ggsurvplot(fit_H, data = Hugo, pval = TRUE, risk.table = TRUE, linetype = "strata", palette = "jco")
+print("Figure 1C: Hugo KM")
+print(ggsurvplot(fit_H, data = Hugo, pval = TRUE, risk.table = TRUE, linetype = "strata", palette = "jco"))
 
 surv_object <- Surv(time = Riaz$OS, event = Riaz$V)
 fit_R <- survfit(surv_object ~ group, data = Riaz)
-ggsurvplot(fit_R, data = Riaz, pval = TRUE, risk.table = TRUE, linetype = "strata", palette = "jco")
+print("Figure 1C: Riaz KM")
+print(ggsurvplot(fit_R, data = Riaz, pval = TRUE, risk.table = TRUE, linetype = "strata", palette = "jco"))

@@ -1,12 +1,9 @@
-library(tidyr)
-
 total_genes <- Table_S2[,c(1,5,4)]
 colnames(total_genes) <- c("Sample","Gene","Group")
 total_genes2 <- Table_S2[,c(1,6,4)]
 colnames(total_genes2) <- c("Sample","Gene","Group")
 total_genes <- rbind(total_genes,total_genes2)
 
-library(stringr)
 for (i in 1:length(total_genes$Gene)) {
   gen <- total_genes$Gene[i]
   if (str_detect(gen, ",") == T) {
@@ -41,7 +38,6 @@ colnames(data) <- c("HTFB", "LTFB")
 rownames(data) <- c("pos", "neg")
 data <- as.table(data)
 
-library(epiR)
 for(i in 1:19){
   data[1,1] <- Gene_overlapping2$high[i]
   data[1,2] <- Gene_overlapping2$low[i]
@@ -52,9 +48,6 @@ for(i in 1:19){
 }
 
 ORdf <- ORdf[order(ORdf$OR,decreasing=TRUE ),]
-
-library(gridExtra)
-library(ggplot2)
 
 ## Plot forest plot
 ORdf$index <- c(1:19)
@@ -74,7 +67,8 @@ plot1 <- ggplot(ORdf, aes(y = index, x = OR)) +
         axis.text.y = element_text(size = 12, colour = "black"),
         axis.text.x.bottom = element_text(size = 12, colour = "black"),
         axis.title.x = element_text(size = 12, colour = "black"))
-plot1
+print("Figure 3A: Odds Ratio for TFB-groups")
+print(plot1)
 
 for(i in 1:19){
   data[1,1] <- Gene_overlapping2$high[i]
@@ -87,4 +81,5 @@ for(i in 1:19){
 }
 
 colnames(Gene_overlapping2)[8:9] <- c("OR","p_value")
-
+print("Gene frequency table")
+print(Gene_overlapping2)
