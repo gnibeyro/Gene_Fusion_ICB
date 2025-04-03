@@ -25,6 +25,11 @@ git clone https://github.com/gnibeyro/Gene_Fusion_ICB.git
 ```
 2. Install necessary R dependencies (if applicable).
 
+```
+install.packages("ggplot2")
+
+```
+
 3. Run the R scripts in the R/ directory to generate figures and analyses based on the provided datasets.
 
 ## Authors
