@@ -38,7 +38,7 @@ install.packages("smoothROCtime")
 
 ```
 
-3. Run the R scripts in the R/ directory to generate figures and analyses based on the provided datasets.
+3. Run the main.R script in the to generate figures and analyses based on the provided datasets.
 
 ## Authors
 
