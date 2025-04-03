@@ -25,9 +25,18 @@ This folder contains R scripts and functions used for data processing and figure
 git clone https://github.com/gnibeyro/Gene_Fusion_ICB.git
 
 ```
-2. Install necessary R dependencies (if applicable).
+2. If you are working with Linux run:
 
 ```
+sudo apt-get install libudunits2-dev libgdal-dev libgeos-dev libproj-dev libsqlite0-dev
+sudo apt-get install libcairo2-dev
+
+```
+3. Install necessary R dependencies (if applicable).
+
+```
+install.packages("sf")
+install.packages("gdtools")
 install.packages("ggplot2")
 install.packages("ggpubr")
 install.packages("survival")
@@ -40,7 +49,7 @@ install.packages("smoothROCtime")
 
 ```
 
-3. Run the main.R script to generate figures and analyses based on the provided datasets.
+4. Run the main.R script to generate figures and analyses based on the provided datasets.
 
 ## Authors
 
