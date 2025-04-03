@@ -17,6 +17,8 @@ This folder contains the datasets used in the study:
 ### 2. `R/`
 This folder contains R scripts and functions used for data processing and figure generation. These scripts allow for the reproduction of all the figures presented in the study.
 
+## How to use it
+
 1. Clone the repository:
 
 ```
@@ -38,7 +40,7 @@ install.packages("smoothROCtime")
 
 ```
 
-3. Run the main.R script in the to generate figures and analyses based on the provided datasets.
+3. Run the main.R script to generate figures and analyses based on the provided datasets.
 
 ## Authors
 
