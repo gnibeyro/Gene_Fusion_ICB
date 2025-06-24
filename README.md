@@ -52,6 +52,9 @@ install.packages("smoothROCtime")
 
 4. Run the main.R script to generate figures and analyses based on the provided datasets.
 
+ejample
+>source("~/your_path/Gene_Fusion_ICB/main.R", echo=TRUE)
+
 ## Authors
 
 - **Guadalupe Nibeyro** - *Curator and Developer* - [CONICET](http://www.conicet.gov.ar) - [Fundación para el Progreso de la Medicina - FPM](https://fpmlab.org.ar/) 
