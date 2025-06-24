@@ -1,12 +1,12 @@
-# Figure 3A
+# Figure 4A
 
 M2 <- ggplot(Table_S1, aes(x=group, y=Macrophages.M2, fill=group)) +
   geom_boxplot() + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
   ggtitle("M2") + stat_compare_means()
-print("Figure 3A: M2 macrophages")
+print("Figure 4A: M2 macrophages")
 print(M2)
 
-# Figure 3B
+# Figure 4B
 
 #Data preparation
 DB_TX <- Table_S1[-which(Table_S1$LS == "Dead (not melanoma)"),]
@@ -23,22 +23,22 @@ TME_plot <- print(ggforest(TME, fontsize = 1) +
                           axis.text = element_text(size = 12),
                           legend.text = element_text(size = 12),
                           legend.title = element_text(size = 14)))
-print("Figure 3B: TME forestplot")
+print("Figure 4B: TME forestplot")
 print(TME_plot)
 
-#Figure 3C
+#Figure 4C
 TMB_plot <- ggscatter(Table_S1, x = "nsMUT", y = "TFB", palette = "jco",
                       add = "reg.line", conf.int = F)+ 
   geom_hline(yintercept = 11)+
   stat_cor(aes(), label.x = 3)+
   ggtitle("TMB")
-print("Figure 3C: TMB correlation")
+print("Figure 4C: TMB correlation")
 print(TMB_plot)
 
-#Figure 3D
+#Figure 4D
 TMB_plot2 <- ggplot(Table_S1, aes(x=group, y=nsMUT, fill=group)) +
   geom_boxplot() + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
   ggtitle("nsMUT") + stat_compare_means()
-print("Figure 3D: TMB distribution")
+print("Figure 4D: TMB distribution")
 print(TMB_plot2)
 

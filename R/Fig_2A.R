@@ -1,4 +1,4 @@
-# Figure 1A
+# Figure 2A
 
 # Add type of variant information to main table
 Table_S2$Fus_type <- "interchromosomal"
@@ -26,5 +26,5 @@ Event_type <- ggplot(FS_clean, aes(x = "", y = Total_Freq, fill = Category)) +
   theme_void() +
   geom_text(aes(label = Label), position = position_stack(vjust = 0.5), color = "white", size = 4.5) +
   labs(title = "Fusion Event Types", fill = "Category")
-print("Figure 1A: Fusion Event Types Percentages")
+print("Figure 2A: Fusion Event Types Percentages")
 print(Event_type)

@@ -1,4 +1,4 @@
-# Figure 1C
+# Figure 2C
 
 Table_S1$logTFB <- log(Table_S1$TFB + 1)
 
@@ -10,5 +10,5 @@ dp <- ggplot(Table_S1, aes(x=R, y=logTFB, fill=R)) +
   labs(title="TFB by RECIST group",x="RECIST", y = "logTFB") + 
   scale_fill_manual(values=c("#1b9e77", "#7570b3", "#d95f02")) +
   theme_classic()
-print("Figure 1C: RECIST boxplot")
+print("Figure 2C: RECIST boxplot")
 print(dp + stat_compare_means(comparisons = my_comparisons, label.y = c(6, 6.5, 7)))

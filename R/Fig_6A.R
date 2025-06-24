@@ -1,4 +1,4 @@
-# Figure 5A
+# Figure 6A
 total_genes <- Table_S2[,c(1,5,4)]
 colnames(total_genes) <- c("Sample","Gene","Group")
 total_genes2 <- Table_S2[,c(1,6,4)]
@@ -68,7 +68,7 @@ plot1 <- ggplot(ORdf, aes(y = index, x = OR)) +
         axis.text.y = element_text(size = 12, colour = "black"),
         axis.text.x.bottom = element_text(size = 12, colour = "black"),
         axis.title.x = element_text(size = 12, colour = "black"))
-print("Figure 5A: Odds Ratio for TFB-groups")
+print("Figure 6A: Odds Ratio for TFB-groups")
 print(plot1)
 
 for(i in 1:19){

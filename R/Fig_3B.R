@@ -1,4 +1,4 @@
-# Figure 2B
+# Figure 3B
 
 DB_TX <- Table_S1[-which(Table_S1$LS == "Dead (not melanoma)"),]
 DB_TX <- DB_TX[-which(is.na(DB_TX$OS) == T),]
@@ -7,7 +7,7 @@ DB_TX$group <- factor(DB_TX$group, levels = c("low", "high"))
 model <- coxph( Surv(OS, V) ~ Cohort + group + previousTX,
                 data = as.data.frame(DB_TX))
 
-print("Figure 2B: TFB-group HR")
+print("Figure 3B: TFB-group HR")
 print(ggforest(model, fontsize = 1) +  # adjust the font size in the ggforest function if available
   theme(text = element_text(size = 14), # adjust general font size
         axis.text = element_text(size = 12),

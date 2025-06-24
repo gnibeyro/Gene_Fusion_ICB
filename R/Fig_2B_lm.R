@@ -1,4 +1,4 @@
-#figure 1B and linear models
+#figure 2B and linear models
 #the outliers are removed from the analysis
 
 ca20_Fus <- ggscatter(Table_S1, x = "CA20", y = "TFB",
@@ -6,7 +6,7 @@ ca20_Fus <- ggscatter(Table_S1, x = "CA20", y = "TFB",
                       add = "reg.line", conf.int = F)+
   geom_hline(yintercept = 11)+
   ggtitle("CA20")
-print("Figure 1B: Cromosomal Instability")
+print("Figure 2B: Cromosomal Instability")
 print(ca20_Fus)
 
 CYT_Fus <- ggscatter(Table_S1[-c(78,136),], x = "CYT", y = "TFB",
@@ -14,7 +14,7 @@ CYT_Fus <- ggscatter(Table_S1[-c(78,136),], x = "CYT", y = "TFB",
                      add = "reg.line", conf.int = F)+
   geom_hline(yintercept = 11)+
   ggtitle("Cytolytic activity")
-print("Figure 1B: Cytolityc Activity")
+print("Figure 2B: Cytolityc Activity")
 print(CYT_Fus)
 
 Prolif_Fus <- ggscatter(Table_S1[-174,], x = "Prolif", y = "TFB",
@@ -22,7 +22,7 @@ Prolif_Fus <- ggscatter(Table_S1[-174,], x = "Prolif", y = "TFB",
                         add = "reg.line", conf.int = F)+
   geom_hline(yintercept = 11)+
   ggtitle("Proliferation")
-print("Figure 1B: Proliferation")
+print("Figure 2B: Proliferation")
 print(Prolif_Fus)
 
 print("Linear Model: Cromosomal Instability")

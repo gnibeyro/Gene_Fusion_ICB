@@ -1,7 +1,7 @@
-# Figure 5B
+# Figure 6B
 Extra <- Table_S1[which(Table_S1$Fus_TERT == "yes"), ]
 
-print("Figure 5B: TERT expression plot")
+print("Figure 6B: TERT expression plot")
 print(ggplot(data = Table_S1, aes(x = "", y=normTERT)) +
   geom_boxplot(width = 0.5) +  # Adjust width if needed
   geom_point(data = Extra, aes(x = 1, y = normTERT, color = group), size = 3.5) + # Plot the highlighted points at the center
